@@ -10,6 +10,9 @@ namespace Problems_b_P1_20160322
 		{
 		static void Main (string[] args)
 			{
+			List run = new List();
+			run.initiateList();
+			run.AskForWord();
 			}
 		}
 	}

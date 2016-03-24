@@ -14,15 +14,17 @@ namespace Problems_b_20160322
 			public int listSize = 5;
 			public void Triangles ()
 			{
-				for (int i = 0; i < listSize; i++)
+				for (int x = 0; x < listSize; x++)
+				{
+					XList.Add(new List<string>(listSize));
+						for (int i = listSize; i < listSize; i++)
 					{
-						XList.Add(new List<string>(listSize));
-							for (int i = listSize; i < listSize; i++)
-							{
 
-							}
+
 
 					}
+
+				}
 			}
 
 			

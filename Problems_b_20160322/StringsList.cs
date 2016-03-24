@@ -10,7 +10,7 @@ namespace Problems_b_20160322
 		{
 		public void myList ()
 			{
-			DoubleDipping word = new DoubleDipping();
+			Trianlges word = new Trianlges();
 
 
 			}

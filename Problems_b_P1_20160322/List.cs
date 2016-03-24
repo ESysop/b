@@ -9,14 +9,31 @@ namespace Problems_b_P1_20160322
 	class List
 		{
 		List<string> wordList = new List<string>();
-
-		public void UserInput ()
+		
+			public void initiateList ()
+				{
+					wordList.Add(" ");
+				}
+		public void AskForWord ()
 			{
-			//while() //to continue input of words until dupe is found
-			Console.WriteLine("Enter a word one time please....");
-			string userInput = Console.ReadLine();
-			wordList.Add(userInput);
+				
+				for (int wordListLegth = 0; wordListLegth < wordList.Count; wordListLegth++)
+					{
+					Console.WriteLine("Enter a word one time please....");
+					string userInput = Console.ReadLine();
+
+					if (wordList.Contains(userInput))
+						{
+						Console.WriteLine("Your Short Term Memory is Completely Shot, You have already used this word,\nThe program will now delete all your hard work.\n\n Have a day.");
+						}
+					else
+						{
+						wordList.Add(userInput);
+						AskForWord();
+						}
+					}
+				
 			}
-		//for loop to iterate list
 		}
 	}
+	
