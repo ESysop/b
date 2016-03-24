@@ -10,12 +10,7 @@ namespace Problems_b_20160322
 		{
 		static void Main (string[] args)
 			{
-			DoubleDipping Run = new DoubleDipping();
-			
-				{
-			Run.CheckForDoubleDipping();
 
-				}
 			}
 		}
 	}
